@@ -62,7 +62,7 @@ export default function Home() {
             />
           </svg>
         </div>
-        <div class={`alert alert-success ${styles.alert}`} role="alert">
+        <div className={`alert alert-success ${styles.alert}`} role="alert">
           <div className={styles.tick}>
             <i className="fa fa-check"></i>
           </div>
