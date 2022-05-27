@@ -108,7 +108,7 @@ export default function Home() {
             </div>
           </form>
           <div className={styles.question}>
-            <p>Don't have an account?</p>
+            <p>Don&apos;t have an account?</p>
             <Link href="/sign-up">
               <button className={styles.sign_up}>SIGN UP</button>
             </Link>
