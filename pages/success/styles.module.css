@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+.container {
+  font-family: "Ubuntu";
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  z-index: 2;
+}
+
+.container p {
+  font-weight: 900;
+  position: relative;
+  top: 20%;
+
+  font-size: 50px;
+}
+
+.blast {
+  position: relative;
+  top: 25%;
+  z-index: 2;
+}
+
+.tick {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  /* Success/Main */
+  background: #04aa6d;
+  border-radius: 12px;
+}
+
+.tick {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 3.5px;
+  padding-top: 0.5px;
+  margin-right: 10px;
+}
+
+.alert {
+  position: relative;
+  display: flex;
+  top: 40%;
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  z-index: 2;
+}
+
+.btn {
+  position: relative;
+  top: 45%;
+  padding: 15px 24px;
+  gap: 10px;
+  border: 0px;
+  background: linear-gradient(282.25deg, #f4ab3e 0%, #f7c170 100%);
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media (max-width: 500px) {
+  .alert {
+    width: 95%;
+    font-size: 13px;
+  }
+}

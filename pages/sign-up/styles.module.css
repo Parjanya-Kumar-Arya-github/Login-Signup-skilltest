@@ -24,7 +24,7 @@
   top: 0px;
   text-align: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../public/bg.jpg");
+    url("../../public/bg.jpg");
 }
 
 .body h2 {
@@ -160,6 +160,16 @@
   position: absolute;
 }
 
+.input_email {
+  margin-top: 100px;
+  position: absolute;
+}
+
+.input_email i {
+  position: absolute;
+  padding: 12px;
+}
+
 .input i {
   position: absolute;
   padding: 12px;
@@ -176,7 +186,7 @@
 }
 
 .input_password {
-  margin-top: 100px;
+  margin-top: 150px;
   position: absolute;
 }
 
@@ -231,7 +241,7 @@
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 350px;
+  top: 370px;
 }
 
 .btn {
@@ -267,10 +277,6 @@
   margin-left: 10px;
 }
 
-.form hr {
-  display: none;
-}
-
 @media (max-width: 1000px) {
   .question {
     left: 30%;
@@ -280,6 +286,15 @@
 @media (max-width: 600px) {
   .form {
     top: 10%;
+    left: 30px;
+  }
+
+  .welcome {
+    margin-left: 60px;
+  }
+
+  .continue_text {
+    margin-left: 60px;
   }
 
   .body {
@@ -304,6 +319,20 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  .input_email i {
+    top: 0;
+    left: 0;
+  }
+
+  .keep {
+    position: absolute;
+    top: 290px;
+  }
+
+  .terms {
+    top: 320px;
   }
 
   .input_password i {

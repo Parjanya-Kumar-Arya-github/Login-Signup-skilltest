@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Link from "next/Link";
-import styles from "../styles/Home.module.css";
+import styles from "./styles.module.css";
+import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.min.css";
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
       <Head>
-        <title>Login</title>
-        <meta name="description" content="Login Page" />
+        <title>Sign Up</title>
+        <meta name="description" content="Sign up page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
@@ -27,10 +27,28 @@ export default function Home() {
         </div>
 
         <div className={styles.part2}>
+          <div className={styles.question}>
+            <p>Already have an account?</p>
+            <Link href="/">
+              <button className={styles.sign_up}>SIGN IN</button>
+            </Link>
+          </div>
           <form className={styles.form}>
-            <h1 className={styles.welcome}>Welcome Back</h1>
-            <p className={styles.continue_text}>Sign in to continue</p>
+            <h1 className={styles.welcome}>Welcome</h1>
+            <p className={styles.continue_text}>Register your account</p>
             <div className={styles.input}>
+              <i className={`fa fa-user ${styles.icon} `}></i>
+              {/* <label htmlFor="exampleInputEmail1">Email</label> */}
+              <input
+                type="email"
+                className="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div className={styles.input_email}>
               <i className={`fa fa-envelope ${styles.icon} `}></i>
               {/* <label htmlFor="exampleInputEmail1">Email</label> */}
               <input
@@ -64,20 +82,19 @@ export default function Home() {
             <p className={styles.terms}>
               By signing in, you agree to our{" "}
               <span>
-                Terms and <br />
-                Conditions
+                Terms and <br /> Conditions
               </span>{" "}
               and <span>Privacy statement.</span>{" "}
             </p>
             <div className={styles.button}>
               <Link href="/success">
                 <button type="submit" className={styles.btn}>
-                  SIGN IN NOW
+                  CONTINUE
                 </button>
               </Link>
               <p>Forgot password?</p>
             </div>
-            <hr />
+
             <div className={styles.continue_with}>
               <p>or continue with</p>
               <svg
@@ -107,12 +124,6 @@ export default function Home() {
               </svg>
             </div>
           </form>
-          <div className={styles.question}>
-            <p>Don't have an account?</p>
-            <Link href="/sign-up">
-              <button className={styles.sign_up}>SIGN UP</button>
-            </Link>
-          </div>
         </div>
       </div>
     </>
