@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import bg from '../public/bg.jpg'
 import "bootstrap/dist/css/bootstrap.min.css";
+
 export default function Home() {
   return (
     <>
@@ -16,6 +19,8 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <div className={styles.body}>
+          <Image src={bg} layout="fill"></Image>
+          <div className={styles.gradient}></div>
           <h2>Cheffy</h2>
           <h1>Lorem Ipsum</h1>
           <p>
